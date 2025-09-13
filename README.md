@@ -35,12 +35,12 @@ To identify customers with a high probability of churn based on historical data 
 ## 📊 Power BI Dashboard
 
 📁 File: `Churn Analysis.pbix`  
-Dashboard Screenshot:
+Dashboard Screenshots:
 
-![Dashboard Screenshot](./ml_model/Screen1.png)
+![Dashboard Screenshot](./ml_model/Screen1.png)  
 ![Dashboard Screenshot](./ml_model/Screen2.png)
 
-> If you're unable to open `.pbix`, refer to screenshots or demo video (see below).
+> If you're unable to open `.pbix`, refer to the screenshots above or the demo video (optional).
 
 ---
 
@@ -57,21 +57,27 @@ Dashboard Screenshot:
 
 ## 🛠️ How to Run the Project
 
-1. Install the required Python libraries:
+### 1. Clone the repository
 
 ```bash
-pip install pandas numpy scikit-learn openpyxl seaborn matplotlib
+git clone https://github.com/NikaL25/customer_churn.git
+cd customer_churn
 ```
 
-2. Open the Jupyter Notebook:
+2. Create and activate a virtual environment (recommended)
+
+Windows:
+
+python -m venv venv
+venv\Scripts\activate
+
+macOS/Linux:
+
+python3 -m venv venv
+source venv/bin/activate
+
+3. Install dependencies
+   pip install -r requirements.txt
+
+4. Launch Jupyter Notebook
    jupyter notebook ml_model/Churn_Prediction.ipynb
-
-The notebook includes:
-
-Data preprocessing
-
-Model training & evaluation
-
-Feature importance plot
-
-Predictions on new data
